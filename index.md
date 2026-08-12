@@ -1,5 +1,9 @@
 # Aprendizaje profundo
 
+:::{figure} ./_images/Seigaiha.png
+:label: Seigaiha
+:::
+
 Estos apuntes cubren los aspectos más fundamentales de un curso de Aprendizaje Profundo a nivel de pregrado, utilizando las bibliotecas PyTorch y Keras. El libro está publicado en https://www.jorgeanais.cl/libro_aprendizaje_profundo/ y todo el código está disponible en https://github.com/jorgeanais/libro_aprendizaje_profundo.
 
 He intentado cubrir los aspectos técnicos y más ásperos de esta disciplina con un enfoque ameno. Una de las virtudes de publicar en internet es poder mantener en constante mejora su contenido. Agradeceré que cualquier mejora me la hagan llegar a mi correo electrónico.
