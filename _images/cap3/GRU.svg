@@ -1,0 +1,2718 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100%"
+   viewBox="0 0 680 400"
+   role="img"
+   style=""
+   version="1.1"
+   id="svg106"
+   sodipodi:docname="GRU.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview106"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.6199999"
+     inkscape:cx="298.75691"
+     inkscape:cy="143.09393"
+     inkscape:window-width="3072"
+     inkscape:window-height="1659"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg106"
+     showguides="false" />
+  <title
+     style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"
+     id="title1">Red recurrente con salidas desplegada en el tiempo</title>
+  <desc
+     style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"
+     id="desc1">Izquierda: diagrama de circuito compacto con nodos x, h, o, L, y y matrices U, V, W. Derecha: grafo desplegado mostrando la cadena h(t-1), h(t), h(t+1) con entradas x, salidas o, pérdidas L y etiquetas y en cada paso temporal.</desc>
+  <defs
+     id="defs54">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M2 1L8 5L2 9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1" />
+    </marker>
+    <mask
+       id="imagine-text-gaps-oasvo4"
+       maskUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="680"
+         height="400"
+         fill="white"
+         id="rect1" />
+      <rect
+         x="59.35795593261719"
+         y="329.2727355957031"
+         width="17.454545974731445"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect2" />
+      <rect
+         x="74"
+         y="294.727294921875"
+         width="16.727272987365723"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect3" />
+      <rect
+         x="59.79545593261719"
+         y="251.27273559570312"
+         width="16.409090995788574"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect4" />
+      <rect
+         x="93"
+         y="238.72727966308594"
+         width="21.090909957885742"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect5" />
+      <rect
+         x="74"
+         y="214.72727966308594"
+         width="18.18181800842285"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect6" />
+      <rect
+         x="59.95454788208008"
+         y="171.27273559570312"
+         width="16.090909004211426"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect7" />
+      <rect
+         x="59.9375"
+         y="91.2727279663086"
+         width="16.125"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect8" />
+      <rect
+         x="60.039772033691406"
+         y="25.272727966308594"
+         width="16.727272987365723"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect9" />
+      <rect
+         x="147.18182373046875"
+         y="240.09091186523438"
+         width="45.6363639831543"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect10" />
+      <rect
+         x="219.7954559326172"
+         y="244.27273559570312"
+         width="16.409090995788574"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect11" />
+      <rect
+         x="214.90341186523438"
+         y="261.727294921875"
+         width="26.19318199157715"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect12" />
+      <rect
+         x="261.92047119140625"
+         y="239.09091186523438"
+         width="21.090909957885742"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect13" />
+      <rect
+         x="309.79547119140625"
+         y="244.27273559570312"
+         width="16.409090995788574"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect14" />
+      <rect
+         x="300.5738830566406"
+         y="261.727294921875"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect15" />
+      <rect
+         x="361.92047119140625"
+         y="239.09091186523438"
+         width="21.090909957885742"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect16" />
+      <rect
+         x="419.79547119140625"
+         y="244.27273559570312"
+         width="16.409090995788574"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect17" />
+      <rect
+         x="416.6363830566406"
+         y="261.727294921875"
+         width="22.727272987365723"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect18" />
+      <rect
+         x="471.92047119140625"
+         y="239.09091186523438"
+         width="21.090909957885742"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect19" />
+      <rect
+         x="529.7954711914062"
+         y="244.27273559570312"
+         width="16.409090995788574"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect20" />
+      <rect
+         x="520.5738525390625"
+         y="261.727294921875"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect21" />
+      <rect
+         x="566.9204711914062"
+         y="239.09091186523438"
+         width="21.090909957885742"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect22" />
+      <rect
+         x="609.7954711914062"
+         y="244.27273559570312"
+         width="16.409090995788574"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect23" />
+      <rect
+         x="604.9034423828125"
+         y="261.727294921875"
+         width="26.19318199157715"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect24" />
+      <rect
+         x="309.35797119140625"
+         y="322.2727355957031"
+         width="17.454545974731445"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect25" />
+      <rect
+         x="300.5738830566406"
+         y="339.727294921875"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect26" />
+      <rect
+         x="324"
+         y="295.727294921875"
+         width="16.727272987365723"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect27" />
+      <rect
+         x="419.35797119140625"
+         y="322.2727355957031"
+         width="17.454545974731445"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect28" />
+      <rect
+         x="416.6363830566406"
+         y="339.727294921875"
+         width="22.727272987365723"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect29" />
+      <rect
+         x="434"
+         y="295.727294921875"
+         width="16.727272987365723"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect30" />
+      <rect
+         x="529.3579711914062"
+         y="322.2727355957031"
+         width="17.454545974731445"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect31" />
+      <rect
+         x="520.5738525390625"
+         y="339.727294921875"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect32" />
+      <rect
+         x="544"
+         y="295.727294921875"
+         width="16.727272987365723"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect33" />
+      <rect
+         x="309.9545593261719"
+         y="164.27273559570312"
+         width="16.090909004211426"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect34" />
+      <rect
+         x="300.5738830566406"
+         y="181.72727966308594"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect35" />
+      <rect
+         x="324"
+         y="215.72727966308594"
+         width="18.18181800842285"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect36" />
+      <rect
+         x="419.9545593261719"
+         y="164.27273559570312"
+         width="16.090909004211426"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect37" />
+      <rect
+         x="416.6363830566406"
+         y="181.72727966308594"
+         width="22.727272987365723"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect38" />
+      <rect
+         x="434"
+         y="215.72727966308594"
+         width="18.18181800842285"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect39" />
+      <rect
+         x="529.95458984375"
+         y="164.27273559570312"
+         width="16.090909004211426"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect40" />
+      <rect
+         x="520.5738525390625"
+         y="181.72727966308594"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect41" />
+      <rect
+         x="544"
+         y="215.72727966308594"
+         width="18.18181800842285"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect42" />
+      <rect
+         x="309.9375"
+         y="91.2727279663086"
+         width="16.125"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect43" />
+      <rect
+         x="300.5738830566406"
+         y="106.72727966308594"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect44" />
+      <rect
+         x="419.9375"
+         y="91.2727279663086"
+         width="16.125"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect45" />
+      <rect
+         x="416.6363830566406"
+         y="106.72727966308594"
+         width="22.727272987365723"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect46" />
+      <rect
+         x="529.9375"
+         y="91.2727279663086"
+         width="16.125"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect47" />
+      <rect
+         x="520.5738525390625"
+         y="106.72727966308594"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect48" />
+      <rect
+         x="310.039794921875"
+         y="18.272727966308594"
+         width="16.727272987365723"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect49" />
+      <rect
+         x="300.5738830566406"
+         y="35.727272033691406"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect50" />
+      <rect
+         x="420.039794921875"
+         y="18.272727966308594"
+         width="16.727272987365723"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect51" />
+      <rect
+         x="416.6363830566406"
+         y="35.727272033691406"
+         width="22.727272987365723"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect52" />
+      <rect
+         x="530.039794921875"
+         y="18.272727966308594"
+         width="16.727272987365723"
+         height="21.454545974731445"
+         fill="black"
+         rx="2"
+         id="rect53" />
+      <rect
+         x="520.5738525390625"
+         y="35.727272033691406"
+         width="34.85227394104004"
+         height="18.54545497894287"
+         fill="black"
+         rx="2"
+         id="rect54" />
+    </mask>
+    <marker
+       id="arrow-3"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-6" />
+    </marker>
+    <marker
+       id="arrow-35"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-62" />
+    </marker>
+    <marker
+       id="arrow-2"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-7" />
+    </marker>
+    <marker
+       id="arrow-9"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-2" />
+    </marker>
+    <marker
+       id="arrow-9-9"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-2-4" />
+    </marker>
+    <marker
+       id="arrow-9-9-4"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-2-4-5" />
+    </marker>
+    <marker
+       id="arrow-6"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-5" />
+    </marker>
+    <marker
+       id="arrow-6-3"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-5-7" />
+    </marker>
+    <marker
+       id="arrow-3-4"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-6-7" />
+    </marker>
+    <marker
+       id="arrow-9-7"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-2-1" />
+    </marker>
+    <marker
+       id="arrow-7"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-27" />
+    </marker>
+    <marker
+       id="arrow-6-3-7"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-5-7-1" />
+    </marker>
+    <marker
+       id="arrow-3-4-9"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-6-7-7" />
+    </marker>
+    <marker
+       id="arrow-6-3-7-7"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-5-7-1-3" />
+    </marker>
+    <marker
+       id="arrow-6-3-7-6"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-5-7-1-39" />
+    </marker>
+    <marker
+       id="arrow-29"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-1" />
+    </marker>
+    <marker
+       id="arrow-9-9-0"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-2-4-6" />
+    </marker>
+    <marker
+       id="arrow-29-2"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-1-6" />
+    </marker>
+    <marker
+       id="arrow-3-4-2"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-6-7-2" />
+    </marker>
+    <marker
+       id="arrow-3-4-2-7"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-6-7-2-3" />
+    </marker>
+    <mask
+       id="imagine-text-gaps-mheeh7-2"
+       maskUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="680"
+         height="320"
+         fill="#ffffff"
+         id="rect1-0" />
+      <rect
+         x="37.289776"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect2-6" />
+      <rect
+         x="77.289772"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect3-1" />
+      <rect
+         x="117.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect4-5" />
+      <rect
+         x="157.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect5-5" />
+      <rect
+         x="197.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect6-4" />
+      <rect
+         x="116.35796"
+         y="243.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect7-7" />
+      <rect
+         x="117.03978"
+         y="27.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect8-6" />
+      <rect
+         x="622.31818"
+         y="287.09091"
+         width="35.36364"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect9-5" />
+      <rect
+         x="296.375"
+         y="138.72728"
+         width="15.25"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect10-6" />
+      <rect
+         x="351.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect11-93" />
+      <rect
+         x="347.52274"
+         y="234.72728"
+         width="24.954546"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect12-74" />
+      <rect
+         x="471.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect13-5" />
+      <rect
+         x="468.92047"
+         y="234.72728"
+         width="22.159092"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect14-2" />
+      <rect
+         x="591.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect15-5" />
+      <rect
+         x="587.66479"
+         y="234.72728"
+         width="24.670456"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect16-4" />
+      <rect
+         x="352.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect17-7" />
+      <rect
+         x="347.52274"
+         y="60.727276"
+         width="24.954546"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect18-4" />
+      <rect
+         x="472.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect19-4" />
+      <rect
+         x="468.92047"
+         y="60.727276"
+         width="22.159092"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect20-3" />
+      <rect
+         x="592.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect21-0" />
+      <rect
+         x="587.66479"
+         y="60.727276"
+         width="24.670456"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect22-78" />
+    </mask>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-6-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-3-8" />
+    </marker>
+    <mask
+       id="imagine-text-gaps-mheeh7-2-4"
+       maskUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="680"
+         height="320"
+         fill="#ffffff"
+         id="rect1-0-5" />
+      <rect
+         x="37.289776"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect2-6-0" />
+      <rect
+         x="77.289772"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect3-1-3" />
+      <rect
+         x="117.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect4-5-6" />
+      <rect
+         x="157.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect5-5-1" />
+      <rect
+         x="197.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect6-4-0" />
+      <rect
+         x="116.35796"
+         y="243.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect7-7-6" />
+      <rect
+         x="117.03978"
+         y="27.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect8-6-3" />
+      <rect
+         x="622.31818"
+         y="287.09091"
+         width="35.36364"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect9-5-2" />
+      <rect
+         x="296.375"
+         y="138.72728"
+         width="15.25"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect10-6-0" />
+      <rect
+         x="351.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect11-93-6" />
+      <rect
+         x="347.52274"
+         y="234.72728"
+         width="24.954546"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect12-74-1" />
+      <rect
+         x="471.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect13-5-5" />
+      <rect
+         x="468.92047"
+         y="234.72728"
+         width="22.159092"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect14-2-5" />
+      <rect
+         x="591.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect15-5-4" />
+      <rect
+         x="587.66479"
+         y="234.72728"
+         width="24.670456"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect16-4-7" />
+      <rect
+         x="352.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect17-7-6" />
+      <rect
+         x="347.52274"
+         y="60.727276"
+         width="24.954546"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect18-4-5" />
+      <rect
+         x="472.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect19-4-6" />
+      <rect
+         x="468.92047"
+         y="60.727276"
+         width="22.159092"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect20-3-9" />
+      <rect
+         x="592.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect21-0-3" />
+      <rect
+         x="587.66479"
+         y="60.727276"
+         width="24.670456"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect22-78-7" />
+    </mask>
+    <mask
+       id="imagine-text-gaps-mheeh7-2-4-3"
+       maskUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="680"
+         height="320"
+         fill="#ffffff"
+         id="rect1-0-5-0" />
+      <rect
+         x="37.289776"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect2-6-0-7" />
+      <rect
+         x="77.289772"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect3-1-3-8" />
+      <rect
+         x="117.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect4-5-6-6" />
+      <rect
+         x="157.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect5-5-1-8" />
+      <rect
+         x="197.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect6-4-0-8" />
+      <rect
+         x="116.35796"
+         y="243.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect7-7-6-4" />
+      <rect
+         x="117.03978"
+         y="27.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect8-6-3-3" />
+      <rect
+         x="622.31818"
+         y="287.09091"
+         width="35.36364"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect9-5-2-1" />
+      <rect
+         x="296.375"
+         y="138.72728"
+         width="15.25"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect10-6-0-4" />
+      <rect
+         x="351.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect11-93-6-9" />
+      <rect
+         x="347.52274"
+         y="234.72728"
+         width="24.954546"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect12-74-1-2" />
+      <rect
+         x="471.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect13-5-5-0" />
+      <rect
+         x="468.92047"
+         y="234.72728"
+         width="22.159092"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect14-2-5-6" />
+      <rect
+         x="591.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect15-5-4-8" />
+      <rect
+         x="587.66479"
+         y="234.72728"
+         width="24.670456"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect16-4-7-9" />
+      <rect
+         x="352.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect17-7-6-2" />
+      <rect
+         x="347.52274"
+         y="60.727276"
+         width="24.954546"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect18-4-5-6" />
+      <rect
+         x="472.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect19-4-6-6" />
+      <rect
+         x="468.92047"
+         y="60.727276"
+         width="22.159092"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect20-3-9-4" />
+      <rect
+         x="592.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect21-0-3-9" />
+      <rect
+         x="587.66479"
+         y="60.727276"
+         width="24.670456"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect22-78-7-5" />
+    </mask>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-6-7-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-3-8-5" />
+    </marker>
+    <mask
+       id="imagine-text-gaps-mheeh7-2-4-9"
+       maskUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="680"
+         height="320"
+         fill="#ffffff"
+         id="rect1-0-5-4" />
+      <rect
+         x="37.289776"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect2-6-0-9" />
+      <rect
+         x="77.289772"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect3-1-3-0" />
+      <rect
+         x="117.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect4-5-6-9" />
+      <rect
+         x="157.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect5-5-1-1" />
+      <rect
+         x="197.28978"
+         y="162.72728"
+         width="15.420455"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect6-4-0-7" />
+      <rect
+         x="116.35796"
+         y="243.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect7-7-6-7" />
+      <rect
+         x="117.03978"
+         y="27.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect8-6-3-1" />
+      <rect
+         x="622.31818"
+         y="287.09091"
+         width="35.36364"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect9-5-2-15" />
+      <rect
+         x="296.375"
+         y="138.72728"
+         width="15.25"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect10-6-0-9" />
+      <rect
+         x="351.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect11-93-6-7" />
+      <rect
+         x="347.52274"
+         y="234.72728"
+         width="24.954546"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect12-74-1-7" />
+      <rect
+         x="471.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect13-5-5-6" />
+      <rect
+         x="468.92047"
+         y="234.72728"
+         width="22.159092"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect14-2-5-7" />
+      <rect
+         x="591.35797"
+         y="217.27274"
+         width="17.454546"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect15-5-4-3" />
+      <rect
+         x="587.66479"
+         y="234.72728"
+         width="24.670456"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect16-4-7-6" />
+      <rect
+         x="352.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect17-7-6-5" />
+      <rect
+         x="347.52274"
+         y="60.727276"
+         width="24.954546"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect18-4-5-63" />
+      <rect
+         x="472.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect19-4-6-9" />
+      <rect
+         x="468.92047"
+         y="60.727276"
+         width="22.159092"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect20-3-9-48" />
+      <rect
+         x="592.03979"
+         y="44.272728"
+         width="16.727272"
+         height="21.454546"
+         fill="#000000"
+         rx="2"
+         id="rect21-0-3-1" />
+      <rect
+         x="587.66479"
+         y="60.727276"
+         width="24.670456"
+         height="18.545456"
+         fill="#000000"
+         rx="2"
+         id="rect22-78-7-2" />
+    </mask>
+  </defs>
+  <!-- ======================== -->
+  <!-- LEFT: Compact circuit    -->
+  <!-- Column x=68              -->
+  <!-- y:  x=340, h=260, o=180, L=100, y=30 -->
+  <!-- ======================== -->
+  <!-- x node -->
+  <!-- U label + arrow x→h -->
+  <!-- h node -->
+  <!-- W label + self-loop -->
+  <!-- V label + arrow h→o -->
+  <!-- o node -->
+  <!-- arrow o→L -->
+  <!-- L node -->
+  <!-- arrow y→L (from above) -->
+  <!-- y node -->
+  <!-- ======================== -->
+  <!-- UNFOLD ARROW             -->
+  <!-- ======================== -->
+  <!-- ======================== -->
+  <!-- RIGHT: Unfolded graph    -->
+  <!-- h row y=262              -->
+  <!-- x row y=340              -->
+  <!-- o row y=182              -->
+  <!-- L row y=102              -->
+  <!-- y row y=36               -->
+  <!-- Columns: 228(dashed), 318, 428, 538, 618(dashed) -->
+  <!-- ======================== -->
+  <!-- h(...) left dashed -->
+  <text
+     x="34.03397"
+     y="446.4267"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text63">h</text>
+  <text
+     x="49.660633"
+     y="437.61935"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text64">(0)</text>
+  <!-- W + arrow h(...)→h(t-1) -->
+  <line
+     x1="65.605301"
+     y1="444.83203"
+     x2="109.6053"
+     y2="444.83203"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line64" />
+  <!-- h(t-1) -->
+  <circle
+     cx="133.6053"
+     cy="444.83203"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65" />
+  <text
+     x="128.34346"
+     y="446.91385"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66">h</text>
+  <text
+     x="140.04555"
+     y="437.1911"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67">(t)</text>
+  <circle
+     cx="-343.26477"
+     cy="59.705952"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65-67" />
+  <text
+     x="-353.21463"
+     y="63.7411"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5">h</text>
+  <text
+     x="-338.77786"
+     y="52.846355"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3">(t-1)</text>
+  <circle
+     cx="422.18176"
+     cy="92.30587"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65-67-6" />
+  <text
+     x="415.35727"
+     y="95.950356"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2">h</text>
+  <text
+     x="427.05936"
+     y="86.227608"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9">(t)</text>
+  <circle
+     cx="421.24066"
+     cy="170.69135"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65-67-6-6" />
+  <text
+     x="414.41617"
+     y="174.33583"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-75">h</text>
+  <text
+     x="426.11829"
+     y="164.61308"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-3">(t)</text>
+  <!-- W + arrow h(t-1)→h(t) -->
+  <line
+     x1="155.6053"
+     y1="444.83203"
+     x2="219.6053"
+     y2="444.83203"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line67" />
+  <line
+     x1="804.89227"
+     y1="129.23448"
+     x2="895.18036"
+     y2="129.23448"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-6)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.78163px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-6)"
+     id="line67-9" />
+  <!-- h(t) -->
+  <circle
+     cx="243.6053"
+     cy="444.83203"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle68" />
+  <text
+     x="238.57402"
+     y="446.69888"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text69">h</text>
+  <text
+     x="248.3644"
+     y="437.79099"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text70">(2)</text>
+  <!-- W + arrow h(t)→h(t+1) -->
+  <!-- h(t+1) -->
+  <circle
+     cx="421.60532"
+     cy="444.83203"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle71" />
+  <text
+     x="417.39127"
+     y="446.83698"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text72">h</text>
+  <text
+     x="428.55069"
+     y="438.07706"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text73">(N)</text>
+  <!-- W + arrow h(t+1)→h(...) right -->
+  <line
+     x1="364.508"
+     y1="444.52039"
+     x2="398.508"
+     y2="444.52039"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-35)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;marker-end:url(#arrow-35)"
+     id="line73-1" />
+  <!-- h(...) right dashed -->
+  <text
+     x="331.66528"
+     y="438.98672"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:32px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text76">...</text>
+  <!-- ===== x inputs ===== -->
+  <!-- x(t-1) -->
+  <circle
+     cx="133.6053"
+     cy="522.83203"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle76" />
+  <text
+     x="130.08931"
+     y="524.03601"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text77">x</text>
+  <text
+     x="142.00462"
+     y="516.20532"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text78">(1)</text>
+  <circle
+     cx="924.84094"
+     cy="289.7735"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle76-9" />
+  <text
+     x="921.32495"
+     y="291.36813"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text77-2">x</text>
+  <text
+     x="933.2403"
+     y="283.53745"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text78-0">(t)</text>
+  <line
+     x1="133.6053"
+     y1="500.83203"
+     x2="133.6053"
+     y2="468.83203"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line78" />
+  <line
+     x1="923.03931"
+     y1="185.77176"
+     x2="923.03931"
+     y2="153.77176"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-9)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-9)"
+     id="line78-8" />
+  <line
+     x1="422.29474"
+     y1="147.41481"
+     x2="422.29474"
+     y2="138.13991"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-9-9)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:0.807553px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-9-9)"
+     id="line78-8-8" />
+  <text
+     x="143.6053"
+     y="487.83203"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text79">U</text>
+  <!-- x(t) -->
+  <circle
+     cx="243.6053"
+     cy="522.83203"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle79" />
+  <text
+     x="239.30797"
+     y="524.03601"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text80">x</text>
+  <text
+     x="250.83263"
+     y="514.83801"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text81">(2)</text>
+  <line
+     x1="923.50159"
+     y1="266.40619"
+     x2="923.50159"
+     y2="234.40619"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line81" />
+  <text
+     x="931.54828"
+     y="258.09421"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text82">U</text>
+  <text
+     x="836.77631"
+     y="186.88905"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text82-5">V</text>
+  <!-- x(t+1) -->
+  <circle
+     cx="421.60532"
+     cy="522.83203"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle82" />
+  <text
+     x="416.72195"
+     y="523.64539"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text83">x</text>
+  <text
+     x="427.85593"
+     y="514.83801"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text84">(N)</text>
+  <line
+     x1="421.60532"
+     y1="500.83203"
+     x2="421.60532"
+     y2="468.83203"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line84" />
+  <text
+     x="431.60532"
+     y="487.83203"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text85">U</text>
+  <!-- ===== o outputs ===== -->
+  <!-- o(t-1) -->
+  <text
+     x="175.097"
+     y="435.45633"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text88">V</text>
+  <text
+     x="72.90538"
+     y="433.9104"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text88-5">V</text>
+  <!-- o(t) -->
+  <text
+     x="279.01968"
+     y="433.79889"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text91">V</text>
+  <!-- o(t+1) -->
+  <text
+     x="457.5444"
+     y="433.79889"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text94">O</text>
+  <!-- ===== L losses ===== -->
+  <!-- L(t-1) -->
+  <!-- L(t) -->
+  <!-- L(t+1) -->
+  <!-- ===== y targets ===== -->
+  <!-- y(t-1) -->
+  <circle
+     cx="510.59869"
+     cy="444.9187"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle100" />
+  <!-- y(t) -->
+  <!-- y(t+1) -->
+  <circle
+     cx="44.150883"
+     cy="445.3721"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65-6" />
+  <line
+     x1="266.164"
+     y1="444.06305"
+     x2="300.164"
+     y2="444.06305"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-3)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;marker-end:url(#arrow-3)"
+     id="line73-5" />
+  <line
+     x1="715.76025"
+     y1="131.82251"
+     x2="749.76025"
+     y2="131.82251"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-3-4)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;marker-end:url(#arrow-3-4)"
+     id="line73-5-4" />
+  <line
+     x1="951.18433"
+     y1="127.58788"
+     x2="985.18433"
+     y2="127.58788"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-3-4-9)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;marker-end:url(#arrow-3-4-9)"
+     id="line73-5-4-6" />
+  <line
+     x1="442.93207"
+     y1="444.84436"
+     x2="486.93207"
+     y2="444.84436"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-2)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-2)"
+     id="line64-9" />
+  <text
+     x="510.42456"
+     y="445.79391"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text38">ŷ</text>
+  <text
+     x="331.31995"
+     y="517.04431"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:32px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text76-6">...</text>
+  <circle
+     cx="922.61694"
+     cy="129.87621"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65-67-6-2" />
+  <text
+     x="917.3551"
+     y="131.95802"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7">c</text>
+  <text
+     x="929.05719"
+     y="122.23528"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0">(t)</text>
+  <circle
+     cx="-340.97949"
+     cy="134.78865"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65-67-6-2-3" />
+  <text
+     x="-346.24133"
+     y="136.87047"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-7">c</text>
+  <text
+     x="-334.53925"
+     y="127.14772"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-5">(t)</text>
+  <circle
+     cx="924.19958"
+     cy="208.98955"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65-67-6-2-6" />
+  <text
+     x="918.93774"
+     y="211.07137"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-2">c</text>
+  <text
+     x="919.51031"
+     y="204.76497"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-2-8">~</text>
+  <text
+     x="414.60281"
+     y="164.48415"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-2-8-6">~</text>
+  <text
+     x="930.63983"
+     y="201.34862"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-6">(t)</text>
+  <text
+     x="937.35547"
+     y="172.74277"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-2-7">γ<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1">U</tspan></text>
+  <text
+     x="943.70825"
+     y="163.61775"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-61">(t)</text>
+  <text
+     x="369.75372"
+     y="132.54262"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-2-7-9">γ </text>
+  <text
+     x="380.38412"
+     y="125.20911"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-61-1">(t)</text>
+  <circle
+     cx="275.01797"
+     cy="94.243324"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65-67-6-3" />
+  <text
+     x="265.06815"
+     y="98.278473"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-6">h</text>
+  <text
+     x="279.89557"
+     y="88.165062"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-1">(t-1)</text>
+  <circle
+     cx="778.21558"
+     cy="130.15619"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle65-67-6-2-63" />
+  <text
+     x="767.48438"
+     y="132.62868"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-20">c</text>
+  <text
+     x="782.31183"
+     y="122.90593"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-615">(t-1)</text>
+  <text
+     x="842.8443"
+     y="112.57693"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-2-7-9-5">γ<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2-4">f</tspan></text>
+  <text
+     x="850.15985"
+     y="104.13846"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-61-1-7">(t)</text>
+  <line
+     x1="803.95935"
+     y1="146.68166"
+     x2="894.58374"
+     y2="202.65242"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-6-3)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:2.06999px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-6-3)"
+     id="line67-9-5" />
+  <line
+     x1="950.33997"
+     y1="135.69386"
+     x2="1005.9061"
+     y2="175.52774"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-6-3-7-6)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.3674px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.3674, 1.3674;stroke-dashoffset:0;marker-end:url(#arrow-6-3-7-6)"
+     id="line67-9-5-5-8" />
+  <circle
+     cx="779.13562"
+     cy="291.2522"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0"
+     id="circle76-9-2" />
+  <text
+     x="767.80634"
+     y="294.01883"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#9c9c96;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text77-2-6">x</text>
+  <text
+     x="784.01898"
+     y="285.4068"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#9c9c96;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text78-0-1">(t-1)</text>
+  <line
+     x1="777.33398"
+     y1="187.25046"
+     x2="777.33398"
+     y2="155.25047"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-9-7)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;marker-end:url(#arrow-9-7)"
+     id="line78-8-0" />
+  <line
+     x1="777.79626"
+     y1="267.88489"
+     x2="777.79626"
+     y2="235.88489"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-7)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;marker-end:url(#arrow-7)"
+     id="line81-6" />
+  <text
+     x="785.84296"
+     y="259.57291"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;fill:#9c9c96;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text82-1">U</text>
+  <circle
+     cx="778.49426"
+     cy="210.46826"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0"
+     id="circle65-67-6-2-6-5" />
+  <text
+     x="766.59106"
+     y="215.28476"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#9c9c96;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-2-9">c</text>
+  <text
+     x="767.16364"
+     y="207.41568"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#9c9c96;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-2-8-4">~</text>
+  <text
+     x="784.93451"
+     y="202.82733"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#999999;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-6-9">(t-1)</text>
+  <path
+     sodipodi:type="spiral"
+     style="fill:none;fill-rule:evenodd;stroke:#000000"
+     id="path2"
+     sodipodi:cx="-108.21468"
+     sodipodi:cy="146.10936"
+     sodipodi:expansion="1"
+     sodipodi:revolution="3"
+     sodipodi:radius="47.854683"
+     sodipodi:argument="-18.116135"
+     sodipodi:t0="0"
+     d="m -108.21468,146.10936 c 1.78245,1.60617 -1.28568,3.19514 -2.66956,2.96256 -3.75021,-0.63029 -4.59324,-5.34799 -3.25556,-8.30167 2.39281,-5.28345 9.27011,-6.2456 13.93378,-3.54856 6.844121,3.95801 7.943587,13.24423 3.841568,19.56589 -5.467348,8.42577 -17.236658,9.66081 -25.197998,4.13457 -10.01854,-6.95422 -11.38796,-21.23777 -4.42758,-30.83012 8.42996,-11.61761 25.24376,-13.12083 36.462226,-4.72057 13.220571,9.8994 14.857304,29.25279 5.013583,42.09433 -11.364966,14.82607 -33.263869,16.59618 -47.726449,5.30659 -16.43331,-12.82795 -18.33673,-37.27636 -5.59959,-53.35856 14.28914,-18.0418 41.289894,-20.078501 58.990673,-5.8926 19.65122,15.74905 21.821182,45.30422 6.185597,64.62279" />
+  <g
+     id="g4-38"
+     transform="rotate(90,762.88757,354.47549)">
+    <path
+       style="fill:#9c9c96;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 533.26009,271.90404 h 9.16371"
+       id="path4-56"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#9c9c96;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 533.35,274.76533 h 9.16371"
+       id="path4-2-1"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     id="g4-3"
+     transform="translate(385.34705,-100.92281)">
+    <path
+       style="fill:#9c9c96;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 533.26009,271.90404 h 9.16371"
+       id="path4-9"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#9c9c96;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 533.35,274.76533 h 9.16371"
+       id="path4-2-0"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     id="g4-8"
+     transform="matrix(0.75081389,-2.2827609,1.6295385,0.53596506,-507.28744,1247.1115)">
+    <path
+       style="fill:#9c9c96;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 533.26009,271.90404 h 9.16371"
+       id="path4-5"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#9c9c96;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 533.35,274.76533 h 9.16371"
+       id="path4-2-09"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <path
+     style="fill:#9c9c96;fill-opacity:1;stroke:#000000;stroke-width:2.03033;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+     d="m 183.83686,203.53468 6.88024,-20.91856"
+     id="path4-5-0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:#9c9c96;fill-opacity:1;stroke:#000000;stroke-width:0.896522;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+     d="m 391.77568,121.78838 4.95176,-5.66714"
+     id="path4-2-09-6"
+     sodipodi:nodetypes="cc" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Red recurrente con salidas desplegada en el tiempo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <circle
+     cx="422.55112"
+     cy="250.4511"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle76-9-7" />
+  <text
+     x="419.03513"
+     y="252.04573"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text77-2-0">x</text>
+  <text
+     x="430.95047"
+     y="244.21504"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text78-0-9">(t)</text>
+  <line
+     x1="421.21176"
+     y1="227.08379"
+     x2="421.21176"
+     y2="195.08379"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-29)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-29)"
+     id="line81-3" />
+  <text
+     x="429.25845"
+     y="218.7718"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text82-6">U</text>
+  <circle
+     cx="272.49033"
+     cy="175.27744"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#9e9e99;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:1.5,1.5;stroke-dashoffset:0"
+     id="circle65-67-6-6-8" />
+  <text
+     x="259.03601"
+     y="178.92194"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#9e9e99;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;fill-opacity:1"
+     id="text66-5-2-75-7">h</text>
+  <text
+     x="277.36795"
+     y="169.19919"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#9e9e99;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;fill-opacity:1"
+     id="text67-3-9-3-9">(t-1)</text>
+  <line
+     x1="273.5444"
+     y1="152.00092"
+     x2="273.5444"
+     y2="120.00091"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-9-9-0)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#9c9c9c;stroke:#9e9e99;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-9-9-0);fill-opacity:1;stroke-opacity:1"
+     id="line78-8-8-2" />
+  <text
+     x="259.4989"
+     y="169.89899"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#9e9e99;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;fill-opacity:1"
+     id="text66-5-2-7-2-8-6-0">~</text>
+  <circle
+     cx="273.80078"
+     cy="255.0372"
+     r="22"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#9e9e99;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:1.5,1.5;stroke-dashoffset:0"
+     id="circle76-9-7-2" />
+  <text
+     x="263.93121"
+     y="258.84177"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#9e9e99;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;fill-opacity:1"
+     id="text77-2-0-3">x</text>
+  <text
+     x="278.88522"
+     y="248.80115"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#9e9e99;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;fill-opacity:1"
+     id="text78-0-9-7">(t-1)</text>
+  <line
+     x1="272.46143"
+     y1="231.66989"
+     x2="272.46143"
+     y2="199.66989"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-29-2)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#9c9c9c;stroke:#9e9e99;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-29-2);fill-opacity:1;stroke-opacity:1"
+     id="line81-3-5" />
+  <line
+     x1="216.34807"
+     y1="92.799858"
+     x2="250.34807"
+     y2="92.799858"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-3-4-2)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;marker-end:url(#arrow-3-4-2)"
+     id="line73-5-4-9" />
+  <line
+     x1="447.00552"
+     y1="91.60096"
+     x2="481.00552"
+     y2="91.60096"
+     stroke="var(--p)"
+     stroke-width="1.5"
+     marker-end="url(#arrow-3-4-2-7)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0;marker-end:url(#arrow-3-4-2-7)"
+     id="line73-5-4-9-1" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.875085;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#arrow-35)"
+     d="m 299.44752,92.265196 h 75.51976"
+     id="path12" />
+  <g
+     id="g15"
+     transform="translate(330.38675,-122.65194)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path15"
+       sodipodi:type="arc"
+       sodipodi:cx="102.48619"
+       sodipodi:cy="203.86742"
+       sodipodi:rx="57.458565"
+       sodipodi:ry="57.458565"
+       sodipodi:start="1.5528515"
+       sodipodi:end="3.1388256"
+       sodipodi:arc-type="arc"
+       d="M 103.51722,261.31673 A 57.458565,57.458565 0 0 1 62.279776,244.91533 57.458565,57.458565 0 0 1 45.027846,204.02641"
+       sodipodi:open="true" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path15-4"
+       d="M 103.4892,254.52482 A 50.828732,50.828732 0 0 1 67.009919,240.01588 50.828732,50.828732 0 0 1 51.748596,203.84492"
+       sodipodi:type="arc"
+       sodipodi:arc-type="arc"
+       sodipodi:open="true"
+       sodipodi:start="1.5528515"
+       sodipodi:end="3.1388256"
+       sodipodi:ry="50.828732"
+       sodipodi:rx="50.828732"
+       sodipodi:cy="203.70427"
+       sodipodi:cx="102.57713" />
+  </g>
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#arrow-35)"
+     d="m 384.25415,91.71271 h 13.81216"
+     id="path16" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#arrow-35)"
+     d="M 422.09946,129.00553 V 116.29835"
+     id="path17" />
+  <path
+     d="m 147.34185,60.359073 c 8.28729,19.341329 19.87206,36.618461 35.91359,47.721117 16.15603,11.18191 39.38718,15.03169 65.25592,14.27381"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1"
+     stroke-dasharray="3 2"
+     mask="url(#imagine-text-gaps-mheeh7-2-4)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:3px, 2px;marker-end:url(#ConcaveTriangle-6-7)"
+     id="path68-8-4"
+     sodipodi:nodetypes="csc"
+     transform="translate(145.08632,50.791743)" />
+  <path
+     d="m 147.34185,60.359073 c 8.28729,19.341329 19.87206,36.618461 35.91359,47.721117 16.15603,11.18191 39.38718,15.03169 65.25592,14.27381"
+     fill="none"
+     stroke="var(--p)"
+     stroke-width="1"
+     stroke-dasharray="3 2"
+     mask="url(#imagine-text-gaps-mheeh7-2-4-9)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:none;stroke:#141413;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:3px, 2px;marker-end:url(#ConcaveTriangle-6-7-1)"
+     id="path68-8-4-3"
+     sodipodi:nodetypes="csc"
+     transform="translate(293.2669,46.799219)" />
+  <text
+     x="349.1134"
+     y="184.35844"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-61-1-2">(t)</text>
+  <text
+     x="339.62421"
+     y="192.8947"
+     text-anchor="middle"
+     dominant-baseline="central"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text66-5-2-7-2-7-9-4">ρ</text>
+  <text
+     x="389.94217"
+     y="81.098778"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-61-1-27">0</text>
+  <text
+     x="435.0816"
+     y="125.3747"
+     text-anchor="middle"
+     dominant-baseline="central"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text67-3-9-0-61-1-27-2">1</text>
+</svg>
