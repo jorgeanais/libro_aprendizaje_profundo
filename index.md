@@ -8,6 +8,9 @@ Mis agradecimientos a las varias generaciones desde 2023 de alumnos de Ingenier�
 
 ## Bibliografía
 
+- Bishop, C. M., y Bishop, H. (2024). Deep learning: Foundations and concepts. Springer Cham. [https://doi.org/10.1007/978-3-031-45468-4.](https://doi.org/10.1007/978-3-031-45468-4) Capítulos del 6 al 9 
+- Géron, A. (2025). Hands-on machine learning with Scikit-Learn and PyTorch. O'Reilly Media. Capítulos del 9 al 13. 
+- Géron, A. (2022). Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow (3.ª ed.). O'Reilly Media. Capítulos del 10 al 13. 
+- Goodfellow, I., Bengio, Y., y Courville, A. (2016). Deep learning. MIT Press. [http://www.deeplearningbook.org](http://www.deeplearningbook.org/). Capítulos 9no y 10mo. 
 - Prince, S. J. (2023). Understanding Deep Learning. MIT press. https://udlbook.github.io/udlbook/  
-- Bishop, C. M., & Bishop, H. (2023). Deep learning: Foundations and concepts. Springer Nature. https://www.bishopbook.com/  
-- Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep learning. MIT press.  
+- Scardapane, S. (2024). Alice’s adventures in a differentiable wonderland (Version 1). arXiv. https://doi.org/10.48550/arXiv.2404.17625. Capítulos del 6to al 9no, incluyendo el capítulo 13. 
