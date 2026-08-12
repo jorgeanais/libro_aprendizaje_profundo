@@ -78,7 +78,7 @@ git push
 ```
 
 Tomar un café y esperar el despliegue automático. En la pestaña 'Actions' del repo se puede ver el build corriendo. 
-Al terminar, tu libro estará en https://TU-USUARIO.github.io/libro-aprendizaje-profundo/. 
+Al terminar, tu libro estará en `https://<TU-USUARIO>.github.io/<libro-xxxxxx>/`, según corresponda. 
 
 ## Workflow
 1. Agregar archivos `.md` o `.ipynb` en el directorio (yo lo organice en carpetas cap1, cap2, etc...)
