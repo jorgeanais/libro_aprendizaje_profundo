@@ -81,15 +81,16 @@ Tomar un café y esperar el despliegue automático. En la pestaña 'Actions' del
 Al terminar, tu libro estará en https://TU-USUARIO.github.io/libro-aprendizaje-profundo/. 
 
 ## Workflow
-1. Agregar archivos `.md` o `.ipynb` en la estructura de archivos (yo lo organice en carpetas cap1, cap2, etc...)
-2. Una vez listos los cambios
+1. Agregar archivos `.md` o `.ipynb` en el directorio (yo lo organice en carpetas cap1, cap2, etc...)
+2. Actualizar el documento myst.yml con la estructura deseada
+3. Una vez listos los cambios
 ```bash
 git add .
 git commit -m "mensaje descriptivo"
 git git push
 ```
-3. Cada vez que hagas git push a main, la Action recompila y republica sola la nueva versión del libro
-4. Disfrutar
+4. Cada vez que hagas git push a main, la Action recompila y republica sola la nueva versión del libro
+5. Disfrutar y tomarse un cafecito
 
 ## Documentación
 
