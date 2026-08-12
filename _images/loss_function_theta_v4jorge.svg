@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="583.42139"
+   viewBox="0 0 583.42139 313.9093"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="loss_function_theta_v4jorge.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   height="313.9093"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2189174"
+     inkscape:cx="79.578814"
+     inkscape:cy="94.346017"
+     inkscape:window-width="2048"
+     inkscape:window-height="1115"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg15" />
+  <defs
+     id="defs8">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1" />
+    </marker>
+    <mask
+       id="imagine-text-gaps-y3ewwa"
+       maskUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="680"
+         height="420"
+         fill="#ffffff"
+         id="rect1" />
+      <rect
+         x="638"
+         y="339.311"
+         width="15.591072"
+         height="21.378008"
+         fill="#000000"
+         rx="2"
+         id="rect2" />
+      <rect
+         x="43.956547"
+         y="28.399822"
+         width="16.311222"
+         height="21.378008"
+         fill="#000000"
+         rx="2"
+         id="rect3" />
+      <rect
+         x="161.73117"
+         y="347.6665"
+         width="20.715351"
+         height="19.111311"
+         fill="#000000"
+         rx="2"
+         id="rect4" />
+      <rect
+         x="330.77597"
+         y="347.6665"
+         width="18.448055"
+         height="19.111311"
+         fill="#000000"
+         rx="2"
+         id="rect5" />
+      <rect
+         x="505.46902"
+         y="347.6665"
+         width="19.061951"
+         height="19.111311"
+         fill="#000000"
+         rx="2"
+         id="rect6" />
+      <rect
+         x="462.00003"
+         y="65.666519"
+         width="111.08747"
+         height="19.111311"
+         fill="#000000"
+         rx="2"
+         id="rect7" />
+      <rect
+         x="462.00003"
+         y="91.666512"
+         width="137.03642"
+         height="19.111311"
+         fill="#000000"
+         rx="2"
+         id="rect8" />
+    </mask>
+    <marker
+       id="arrow-7"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-5" />
+    </marker>
+    <marker
+       id="arrow-6"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-2" />
+    </marker>
+    <marker
+       id="arrow-2"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-7" />
+    </marker>
+  </defs>
+  <!-- Axes -->
+  <line
+     x1="15.884995"
+     y1="297.57346"
+     x2="575.88501"
+     y2="297.57346"
+     stroke="var(--t)"
+     stroke-width="1.2"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#73726c;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line8" />
+  <line
+     x1="15.884995"
+     y1="297.57346"
+     x2="15.884995"
+     y2="2.5734596"
+     stroke="var(--t)"
+     stroke-width="1.2"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#73726c;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line9" />
+  <!-- Axis labels -->
+  <text
+     x="575.12256"
+     y="310.1149"
+     dominant-baseline="central"
+     fill="var(--p)"
+     font-style="italic"
+     style="color:#000000;font-style:italic;font-weight:400;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:start;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text9">θ</text>
+  <text
+     x="2.5258789"
+     y="10.206055"
+     text-anchor="middle"
+     fill="var(--p)"
+     style="color:#000000;font-weight:400;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text10">L</text>
+  <!-- Loss curve -->
+  <path
+     d="m 70,220 c 20,-5 40,40 60,60 15,15 28,30 42,25 18,-10 43,-50 68,-65 22,-12 38,-18 55,-12 17,7 30,72 45,70 15,-2 30,-43 60,-88 25,-35 48,-42 68,-35 17,5 30,20 47,13 20,-10 40,-48 65,-88 15,-20 30,-32 38,-38"
+     fill="none"
+     stroke="#534AB7"
+     stroke-width="2.5"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     mask="url(#imagine-text-gaps-y3ewwa)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:none;stroke:#534ab7;stroke-width:2.5px;stroke-linecap:round;stroke-linejoin:round"
+     id="path10"
+     transform="translate(-54.115005,-47.42654)" />
+  <!-- Global minimum marker -->
+  <circle
+     cx="110.92368"
+     cy="257.86353"
+     r="5"
+     fill="#534AB7"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#534ab7;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle10" />
+  <line
+     x1="110.92368"
+     y1="260.86353"
+     x2="110.92368"
+     y2="297.86353"
+     stroke="#534AB7"
+     stroke-width="1"
+     stroke-dasharray="3 3"
+     opacity="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:0.5;fill:#000000;stroke:#534ab7;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:3px, 3px"
+     id="line10" />
+  <text
+     x="111.21373"
+     y="311.25302"
+     text-anchor="middle"
+     fill="#534AB7"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text11">3</text>
+  <text
+     x="16.310417"
+     y="311.8692"
+     text-anchor="middle"
+     fill="#534AB7"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text11-2">0</text>
+  <!-- Local minimum 1 -->
+  <circle
+     cx="285.88501"
+     cy="250.57346"
+     r="4.5"
+     fill="#9FE1CB"
+     stroke="#0F6E56"
+     stroke-width="1"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#9fe1cb;stroke:#0f6e56;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle11" />
+  <line
+     x1="285.88501"
+     y1="253.57346"
+     x2="285.88501"
+     y2="297.57346"
+     stroke="#0F6E56"
+     stroke-width="1"
+     stroke-dasharray="3 3"
+     opacity="0.4"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:0.4;fill:#000000;stroke:#0f6e56;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:3px, 3px"
+     id="line11" />
+  <text
+     x="285.88501"
+     y="313.57346"
+     text-anchor="middle"
+     fill="#0F6E56"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text12">8</text>
+  <!-- Local minimum 2 -->
+  <circle
+     cx="453.63361"
+     cy="141.73367"
+     r="4.5"
+     fill="#9FE1CB"
+     stroke="#0F6E56"
+     stroke-width="1"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#9fe1cb;stroke:#0f6e56;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle12" />
+  <line
+     x1="453.34357"
+     y1="145.60384"
+     x2="453.34357"
+     y2="299.60385"
+     stroke="#0F6E56"
+     stroke-width="1"
+     stroke-dasharray="3 3"
+     opacity="0.4"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:0.4;fill:#000000;stroke:#0f6e56;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:3px, 3px"
+     id="line12" />
+  <line
+     x1="511.4071"
+     y1="79.590027"
+     x2="511.4071"
+     y2="297.40219"
+     stroke="#0F6E56"
+     stroke-width="1"
+     stroke-dasharray="3 3"
+     opacity="0.4"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:0.4;fill:#000000;stroke:#0f6e56;stroke-width:1.18926px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:3.5678px, 3.5678px"
+     id="line12-5" />
+  <text
+     x="460.88501"
+     y="313.57346"
+     text-anchor="middle"
+     fill="#0F6E56"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text13">13</text>
+  <text
+     x="511.48041"
+     y="313.73938"
+     text-anchor="middle"
+     fill="#0F6E56"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text13-5">15</text>
+  <!-- Legend box: top-right corner, away from curve -->
+  <!-- Legend: global minimum -->
+  <text
+     x="123.86012"
+     y="271.44916"
+     fill="#534AB7"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text14">Mínimo global θ*</text>
+  <!-- Legend: local minima -->
+  <text
+     x="289.48169"
+     y="266.99335"
+     fill="#0F6E56"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text15">Mínimo local θ₁</text>
+  <text
+     x="361.49731"
+     y="162.72084"
+     fill="#0F6E56"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text15-6">Mínimo local θ₂</text>
+  <path
+     sodipodi:type="star"
+     style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     id="path2"
+     inkscape:flatsided="false"
+     sodipodi:sides="4"
+     sodipodi:cx="101.80939"
+     sodipodi:cy="71.643646"
+     sodipodi:r1="14.973707"
+     sodipodi:r2="2.824599"
+     sodipodi:arg1="0.79909594"
+     sodipodi:arg2="1.6436642"
+     inkscape:rounded="0.066218657"
+     inkscape:randomized="0"
+     d="m 112.25138,82.375691 c -0.66481,0.574337 -9.76918,-7.902909 -10.64763,-7.914941 -0.86062,-0.01179 -9.96373,8.276191 -10.526407,7.624885 -0.574337,-0.664802 7.902909,-9.769176 7.914941,-10.647629 0.01179,-0.86062 -8.276191,-9.963727 -7.624886,-10.526404 0.664802,-0.574337 9.769172,7.902909 10.647632,7.914941 0.86062,0.01179 9.96372,-8.276191 10.5264,-7.624886 0.57434,0.664802 -7.90291,9.769177 -7.91494,10.64763 -0.0118,0.860619 8.27619,9.963726 7.62489,10.526404 z"
+     inkscape:transform-center-x="0.31538332"
+     inkscape:transform-center-y="-0.61363321"
+     transform="matrix(0.79407326,0,0,0.79407326,430.35856,19.826803)" />
+  <rect
+     style="fill:#ffffff;stroke:#9e9e99;stroke-linejoin:round;stroke-miterlimit:0;fill-opacity:1;stroke-dasharray:0,11;stroke-dashoffset:0"
+     id="rect10"
+     width="55.787209"
+     height="58.248409"
+     x="522.59491"
+     y="2.4612005"
+     rx="8" />
+</svg>

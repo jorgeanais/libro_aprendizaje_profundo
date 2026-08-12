@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="676.78723"
+   viewBox="0 0 676.78723 322.14716"
+   version="1.1"
+   id="svg34"
+   sodipodi:docname="computation_graph_dense_nnv2.1.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   height="322.14716"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview34"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.4378348"
+     inkscape:cx="317.28975"
+     inkscape:cy="171.46363"
+     inkscape:window-width="1078"
+     inkscape:window-height="1063"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg34" />
+  <defs
+     id="defs1">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrow-6"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-7" />
+    </marker>
+    <marker
+       id="arrow-6-2"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-7-7" />
+    </marker>
+    <marker
+       id="arrow-6-6"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-7-0" />
+    </marker>
+    <marker
+       id="arrow-6-23"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse"
+       preserveAspectRatio="xMidYMid">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-7-75" />
+    </marker>
+    <marker
+       id="arrow-67"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1-5" />
+    </marker>
+  </defs>
+  <!-- ── ROW Y positions ──
+     Main flow row:  y = 180  (circles r=26)
+     Param row top:  y = 90   (circles r=20) — W, U
+     Param row bot:  y = 280  (circles r=20) — b¹, c
+     Loss row:       y = 180  (same as main)
+     ŷ below y:      y = 310  (circle r=20)
+-->
+  <!-- ════════════════════════════════
+     LAYER 1:  x · W + b¹  →  sig()  →  h
+     ════════════════════════════════ -->
+  <!-- x -->
+  <g
+     onclick="sendPrompt('¿Qué representa x en la red neuronal?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g1"
+     transform="translate(-25.75,-81.903853)">
+    <circle
+       cx="52"
+       cy="180"
+       r="26"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#f1efe8;stroke:#5f5e5a;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle1" />
+    <text
+       x="52"
+       y="180"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#444441;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text1">x</text>
+  </g>
+  <!-- W¹ (param, above) -->
+  <g
+     onclick="sendPrompt('¿Qué son los pesos W de la capa 1?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g2"
+     transform="translate(-34.451657,-57.829267)">
+    <circle
+       cx="140"
+       cy="90"
+       r="20"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle2" />
+    <text
+       x="140"
+       y="90"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text2">W<tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan35">(1)</tspan></text>
+  </g>
+  <!-- b¹ (param, below) -->
+  <g
+     onclick="sendPrompt('¿Qué es el sesgo b de la capa 1?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g3"
+     transform="translate(31.970995,-97.276781)">
+    <circle
+       cx="140"
+       cy="278"
+       r="20"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle3" />
+    <text
+       x="140"
+       y="278"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text3">b<tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan36">(1)</tspan></text>
+  </g>
+  <!-- u¹ (pre-activación capa 1) -->
+  <g
+     onclick="sendPrompt('¿Qué es u¹, la pre-activación de la capa 1?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5"
+     transform="translate(-25.75,-81.903853)">
+    <circle
+       cx="200"
+       cy="180"
+       r="26"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#eeedfe;stroke:#534ab7;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle4" />
+    <text
+       x="201.74033"
+       y="183.41161"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3c3489;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text4">u<tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan34">(1)</tspan></text>
+    <text
+       x="200"
+       y="191"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#534ab7;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text5" />
+  </g>
+  <!-- sig label above arrow x→u¹ -->
+  <text
+     x="132.2859"
+     y="93.087845"
+     text-anchor="middle"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text6">×</text>
+  <!-- + label at u¹ -->
+  <text
+     x="164.9848"
+     y="140.67902"
+     text-anchor="middle"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text7">+</text>
+  <!-- h (activación sig) -->
+  <g
+     onclick="sendPrompt('¿Qué es h, la salida de la función sigmoide?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g8"
+     transform="translate(-25.75,-81.903853)">
+    <circle
+       cx="310"
+       cy="180"
+       r="26"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#eeedfe;stroke:#534ab7;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle7" />
+    <text
+       x="310"
+       y="180"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3c3489;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text8">h</text>
+  </g>
+  <!-- sig() label above arrow u¹→h -->
+  <text
+     x="224.01686"
+     y="90.022186"
+     text-anchor="middle"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text9">σ( )</text>
+  <!-- ════════════════════════════════
+     LAYER 2:  h · U + c  →  u²  →  softmax  →  ŷ
+     ════════════════════════════════ -->
+  <!-- U (param, above) -->
+  <g
+     onclick="sendPrompt('¿Qué son los pesos U de la capa 2?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g10"
+     transform="translate(-36.191989,-56.378991)">
+    <circle
+       cx="390"
+       cy="90"
+       r="20"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle9" />
+    <text
+       x="390"
+       y="90"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text10">U</text>
+  </g>
+  <!-- c (param, below) -->
+  <g
+     onclick="sendPrompt('¿Qué es el sesgo c de la capa 2?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g11"
+     transform="translate(36.321823,-98.727057)">
+    <circle
+       cx="390"
+       cy="278"
+       r="20"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle10" />
+    <text
+       x="390"
+       y="278"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#085041;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text11">c</text>
+  </g>
+  <!-- u² (pre-activación capa 2) -->
+  <g
+     onclick="sendPrompt('¿Qué es u², la pre-activación de la capa 2?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g13"
+     transform="translate(-25.75,-81.903853)">
+    <circle
+       cx="450"
+       cy="180"
+       r="26"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#eeedfe;stroke:#534ab7;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle11" />
+    <text
+       x="449.4408"
+       y="181.79857"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;fill:#3c3489;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text4-2">u<tspan
+   style="font-size:65%;baseline-shift:super"
+   id="tspan34-9">(2)</tspan></text>
+  </g>
+  <!-- + label at u² -->
+  <text
+     x="418.75552"
+     y="138.93869"
+     text-anchor="middle"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text14">+</text>
+  <!-- × label -->
+  <text
+     x="382.70581"
+     y="94.828201"
+     text-anchor="middle"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text15">×</text>
+  <!-- ŷ (output softmax) -->
+  <g
+     onclick="sendPrompt('¿Qué es ŷ, la predicción de la red?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g16"
+     transform="translate(-7.766575,-82.483963)">
+    <circle
+       cx="540"
+       cy="180"
+       r="26"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#eeedfe;stroke:#534ab7;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle15" />
+    <text
+       x="540"
+       y="180"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#3c3489;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text16">ŷ</text>
+  </g>
+  <!-- softmax label above arrow u²→ŷ -->
+  <text
+     x="478.00143"
+     y="81.59848"
+     text-anchor="middle"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text17">softmax( )</text>
+  <!-- ════════════════════════════════
+     LOSS:  L = CrossEntropy(ŷ, y)
+     ════════════════════════════════ -->
+  <!-- y (ground truth) -->
+  <g
+     onclick="sendPrompt('¿Qué es y, la etiqueta real?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g18"
+     transform="translate(-515.94337,-96.11656)">
+    <circle
+       cx="540"
+       cy="310"
+       r="20"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#faece7;stroke:#993c1d;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle17" />
+    <text
+       x="540"
+       y="310"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#712b13;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text18">y</text>
+  </g>
+  <!-- L (loss) -->
+  <g
+     onclick="sendPrompt('¿Cómo se calcula la pérdida L con entropía cruzada?')"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g19"
+     transform="translate(20.53723,-81.663563)">
+    <circle
+       cx="630"
+       cy="180"
+       r="26"
+       stroke-width="0.5"
+       style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#fcebeb;stroke:#a32d2d;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="circle18" />
+    <text
+       x="630"
+       y="180"
+       text-anchor="middle"
+       dominant-baseline="central"
+       style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:central;text-anchor:middle;opacity:1;fill:#791f1f;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+       id="text19">L</text>
+  </g>
+  <!-- CrossEntropy label -->
+  <text
+     x="607.38965"
+     y="127.89888"
+     text-anchor="middle"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text20"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       x="607.38965"
+       y="127.89888">CE(ŷ, y)</tspan><tspan
+       sodipodi:role="line"
+       id="tspan2"
+       x="607.38965"
+       y="142.89888" /></text>
+  <!-- ════════════════════════════════
+     ARROWS
+     ════════════════════════════════ -->
+  <!-- x → u¹ -->
+  <line
+     x1="52.25"
+     y1="98.096146"
+     x2="144.25"
+     y2="98.096146"
+     stroke="var(--s)"
+     stroke-width="1.2"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#3d3d3a;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line20" />
+  <!-- W¹ → u¹ -->
+  <!-- b¹ → u¹ -->
+  <!-- u¹ → h -->
+  <line
+     x1="200.25"
+     y1="98.096146"
+     x2="254.25"
+     y2="98.096146"
+     stroke="var(--s)"
+     stroke-width="1.2"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#3d3d3a;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line23" />
+  <!-- h → u² -->
+  <line
+     x1="310.25"
+     y1="98.096146"
+     x2="394.25"
+     y2="98.096146"
+     stroke="var(--s)"
+     stroke-width="1.2"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#3d3d3a;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line24" />
+  <!-- U → u² -->
+  <!-- c → u² -->
+  <!-- u² → ŷ -->
+  <line
+     x1="449.95993"
+     y1="97.806091"
+     x2="505.0885"
+     y2="97.806091"
+     stroke="var(--s)"
+     stroke-width="1.2"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#3d3d3a;stroke-width:1.52802px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line27" />
+  <!-- ŷ → L -->
+  <line
+     x1="558.2334"
+     y1="97.516037"
+     x2="624.13263"
+     y2="97.516037"
+     stroke="var(--s)"
+     stroke-width="1.2"
+     marker-end="url(#arrow)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#3d3d3a;stroke-width:1.67064px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line28" />
+  <!-- y → L (diagonal from below) -->
+  <!-- ════════════════════════════════
+     LEGEND
+     ════════════════════════════════ -->
+  <rect
+     x="37.580402"
+     y="260.14716"
+     width="596"
+     height="62"
+     rx="8"
+     fill="var(--bg2)"
+     stroke="var(--b)"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#f5f4ed;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect29" />
+  <circle
+     cx="67.580406"
+     cy="282.14716"
+     r="8"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#f1efe8;stroke:#5f5e5a;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle29" />
+  <text
+     x="81.580406"
+     y="286.14716"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text29">entrada</text>
+  <circle
+     cx="67.580406"
+     cy="306.14716"
+     r="8"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#e1f5ee;stroke:#0f6e56;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle30" />
+  <text
+     x="81.580406"
+     y="310.14716"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text30">parámetros (W,b,U, c)</text>
+  <circle
+     cx="225.5804"
+     cy="282.14716"
+     r="8"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#eeedfe;stroke:#534ab7;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle31" />
+  <text
+     x="239.58041"
+     y="286.14716"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text31">activaciones/preactivaciones</text>
+  <circle
+     cx="225.5804"
+     cy="306.14716"
+     r="8"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#faece7;stroke:#993c1d;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle32" />
+  <text
+     x="239.58041"
+     y="310.14716"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text32">etiqueta real (y)</text>
+  <circle
+     cx="441.57822"
+     cy="282.96756"
+     r="8"
+     stroke-width="0.5"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#fcebeb;stroke:#a32d2d;stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="circle33" />
+  <text
+     x="455.57822"
+     y="286.96756"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text33">Pérdida L</text>
+  <text
+     x="455.57822"
+     y="310.96756"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text34">flechas: flujo hacia adelante</text>
+  <line
+     x1="171.45369"
+     y1="159.81929"
+     x2="171.45369"
+     y2="125.81927"
+     stroke="var(--s)"
+     stroke-width="1.2"
+     marker-end="url(#arrow-6)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#3d3d3a;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-6)"
+     id="line27-3" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1.2;stroke-dasharray:none;marker-end:url(#arrow-6)"
+     d="m 105.06492,52.681787 c 3.48066,34.22652 43.79834,30.4558 43.79834,30.4558"
+     id="path34" />
+  <line
+     x1="425.15619"
+     y1="159.41513"
+     x2="425.15619"
+     y2="125.41512"
+     stroke="var(--s)"
+     stroke-width="1.2"
+     marker-end="url(#arrow-6-2)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#3d3d3a;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-6-2)"
+     id="line27-3-9" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1.2;stroke-dasharray:none;marker-end:url(#arrow-6-6)"
+     d="m 44.689462,216.1458 c 32.498598,0.009 302.263988,0.33258 466.450678,0.2637 71.01877,-0.0298 109.1843,-49.47977 131.23157,-92.97331"
+     id="path34-2"
+     sodipodi:nodetypes="csc" />
+  <text
+     x="1.2563992"
+     y="246.0663"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text32-8">etiqueta</text>
+  <text
+     x="4.3586082"
+     y="137.98682"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text29-2">entrada</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1.2;stroke-dasharray:none;marker-end:url(#arrow-6-23)"
+     d="m 352.34968,53.941377 c 3.48066,34.22652 43.79834,30.4558 43.79834,30.4558"
+     id="path34-22" />
+  <line
+     x1="432.94815"
+     y1="307.013"
+     x2="450.79666"
+     y2="307.013"
+     stroke="var(--s)"
+     stroke-width="1.2"
+     marker-end="url(#arrow-67)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;fill:#000000;stroke:#3d3d3a;stroke-width:0.869446px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#arrow-67)"
+     id="line28-5" />
+  <rect
+     style="fill:none;stroke:#004dab;stroke-width:1.2;stroke-linejoin:round;stroke-dasharray:4.8, 1.2;stroke-dashoffset:0;stroke-opacity:0.630516"
+     id="rect20"
+     width="239.73859"
+     height="204.50958"
+     x="76.302094"
+     y="0.60000002"
+     ry="24.364641"
+     rx="0" />
+  <text
+     x="262.90472"
+     y="20.86706"
+     text-anchor="middle"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;fill:#004cab;fill-opacity:0.631373;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text20-6"><tspan
+       sodipodi:role="line"
+       id="tspan2-3"
+       x="262.90472"
+       y="20.86706"
+       style="fill:#004cab;fill-opacity:0.631373;stroke:none;stroke-opacity:0.630516">Capa oculta 1</tspan></text>
+  <rect
+     style="fill:none;stroke:#004dab;stroke-width:1.2;stroke-linejoin:round;stroke-dasharray:4.8, 1.2;stroke-dashoffset:0;stroke-opacity:0.630516"
+     id="rect20-8"
+     width="239.73859"
+     height="204.50958"
+     x="326.02786"
+     y="1.246164"
+     ry="24.364641"
+     rx="0" />
+  <text
+     x="512.63049"
+     y="21.513231"
+     text-anchor="middle"
+     fill="var(--color-text-secondary)"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;fill:#004cab;fill-opacity:0.631373;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text20-6-6"><tspan
+       sodipodi:role="line"
+       id="tspan2-3-8"
+       x="512.63049"
+       y="21.513231"
+       style="fill:#004cab;fill-opacity:0.631373;stroke:none;stroke-opacity:0.630516">Capa salida</tspan></text>
+</svg>

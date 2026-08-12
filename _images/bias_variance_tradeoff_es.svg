@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="571.51532"
+   viewBox="0 0 571.51532 374.22949"
+   version="1.1"
+   id="svg38"
+   sodipodi:docname="bias_variance_tradeoff_es.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   height="374.22949"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview38"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="1.6454545"
+     inkscape:cx="220.30387"
+     inkscape:cy="167.12708"
+     inkscape:window-width="2048"
+     inkscape:window-height="1115"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg38" />
+  <defs
+     id="defs18">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="8"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrowR"
+       viewBox="0 0 10 10"
+       refX="2"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto">
+      <path
+         d="M 2,1 8,5 2,9"
+         fill="none"
+         stroke="context-stroke"
+         stroke-width="1.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path2" />
+    </marker>
+    <clipPath
+       id="chartclip">
+      <rect
+         x="80"
+         y="30"
+         width="530"
+         height="310"
+         id="rect2" />
+    </clipPath>
+    <mask
+       id="imagine-text-gaps-n65wmh"
+       maskUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="680"
+         height="440"
+         fill="#ffffff"
+         id="rect3" />
+      <rect
+         x="270.95505"
+         y="385.11249"
+         width="158.0899"
+         height="19.919884"
+         fill="#000000"
+         rx="2"
+         id="rect4" />
+      <rect
+         x="-6.1108027"
+         y="170.11247"
+         width="56.776318"
+         height="19.919884"
+         fill="#000000"
+         rx="2"
+         id="rect5" />
+      <rect
+         x="495.99997"
+         y="275.11246"
+         width="169.76923"
+         height="19.919884"
+         fill="#000000"
+         rx="2"
+         id="rect6" />
+      <rect
+         x="495.99997"
+         y="293.14481"
+         width="175.27722"
+         height="16.887524"
+         fill="#000000"
+         rx="2"
+         id="rect7" />
+      <rect
+         x="485.99997"
+         y="229.11247"
+         width="168.98744"
+         height="19.919884"
+         fill="#000000"
+         rx="2"
+         id="rect8" />
+      <rect
+         x="139.88872"
+         y="-1.8875246"
+         width="70.22258"
+         height="19.919884"
+         fill="#000000"
+         rx="2"
+         id="rect9" />
+      <rect
+         x="418.67001"
+         y="-1.8875246"
+         width="82.659988"
+         height="19.919884"
+         fill="#000000"
+         rx="2"
+         id="rect10" />
+      <rect
+         x="301.45276"
+         y="-1.8875246"
+         width="53.09449"
+         height="19.919884"
+         fill="#000000"
+         rx="2"
+         id="rect11" />
+      <rect
+         x="508"
+         y="239.14484"
+         width="62.80122"
+         height="16.887524"
+         fill="#000000"
+         rx="2"
+         id="rect12" />
+      <rect
+         x="508"
+         y="252.14484"
+         width="85.313301"
+         height="16.887524"
+         fill="#000000"
+         rx="2"
+         id="rect13" />
+      <rect
+         x="64.664192"
+         y="346.14484"
+         width="30.819521"
+         height="16.887524"
+         fill="#000000"
+         rx="2"
+         id="rect14" />
+      <rect
+         x="307.67145"
+         y="346.14484"
+         width="40.805031"
+         height="16.887524"
+         fill="#000000"
+         rx="2"
+         id="rect15" />
+      <rect
+         x="566.33435"
+         y="346.14484"
+         width="27.483191"
+         height="16.887524"
+         fill="#000000"
+         rx="2"
+         id="rect16" />
+      <rect
+         x="135.99998"
+         y="378.14481"
+         width="401.14056"
+         height="16.887524"
+         fill="#000000"
+         rx="2"
+         id="rect17" />
+      <rect
+         x="413.99997"
+         y="378.14481"
+         width="253.36292"
+         height="16.887524"
+         fill="#000000"
+         rx="2"
+         id="rect18" />
+    </mask>
+  </defs>
+  <!-- ── Background zone fills ── -->
+  <rect
+     x="80"
+     y="30"
+     width="218"
+     height="310"
+     fill="#E6F1FB"
+     opacity="0.28"
+     clip-path="url(#chartclip)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:0.28;fill:#e6f1fb;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect19"
+     transform="translate(-54.559639,-7.1959655)" />
+  <rect
+     x="298"
+     y="30"
+     width="60"
+     height="310"
+     fill="#EAF3DE"
+     opacity="0.35"
+     clip-path="url(#chartclip)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:0.35;fill:#eaf3de;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect20"
+     transform="translate(-54.559639,-7.1959655)" />
+  <rect
+     x="390.65973"
+     y="18.397198"
+     width="219.34026"
+     height="321.60281"
+     fill="#FAECE7"
+     opacity="0.28"
+     clip-path="url(#chartclip)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:0.28;fill:#faece7;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect21"
+     transform="translate(-87.073451,-3.5495567)" />
+  <!-- ── Axes ── -->
+  <line
+     x1="25.440361"
+     y1="332.80405"
+     x2="565.44037"
+     y2="332.80405"
+     stroke="var(--color-text-primary)"
+     stroke-width="1.5"
+     marker-end="url(#arrowR)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line21" />
+  <line
+     x1="25.440361"
+     y1="332.80405"
+     x2="25.440361"
+     y2="17.804035"
+     stroke="var(--color-text-primary)"
+     stroke-width="1.5"
+     marker-end="url(#arrowR)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#141413;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line22" />
+  <!-- Axis labels -->
+  <text
+     x="271.37531"
+     y="371.31738"
+     text-anchor="middle"
+     font-size="14"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text22">Capacidad de la red neuronal artificial</text>
+  <text
+     x="-179.0195"
+     y="11.197266"
+     text-anchor="middle"
+     font-size="14"
+     transform="rotate(-90)"
+     style="color:#000000;font-weight:500;font-size:14px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text23">Pérdida</text>
+  <!-- ── Optimum dashed line ── -->
+  <line
+     x1="273.44037"
+     y1="22.804035"
+     x2="273.44037"
+     y2="332.80405"
+     stroke="var(--color-text-secondary)"
+     stroke-width="1.5"
+     stroke-dasharray="6 4"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#3d3d3a;stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:6px, 4px"
+     id="line23" />
+  <!-- ── GENERALIZATION LOSS curve (coral/red — validation/test error, U-shaped) ──
+     Goes from high left, dips near optimum, rises in overfitting region -->
+  <!-- ── TRAINING LOSS curve (blue — training error, monotonically decreasing) ── -->
+  <!-- ── Curve labels ── -->
+  <text
+     x="439.47253"
+     y="199.1757"
+     font-size="13"
+     fill="#993C1D"
+     style="color:#000000;font-weight:500;font-size:10.6667px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text24"><tspan
+       sodipodi:role="line"
+       id="tspan40"
+       x="439.47253"
+       y="199.1757">Pérdida de</tspan><tspan
+       sodipodi:role="line"
+       id="tspan41"
+       x="439.47253"
+       y="212.50908">generalización</tspan></text>
+  <text
+     x="423.85764"
+     y="295.54398"
+     font-size="13"
+     fill="#0C447C"
+     style="color:#000000;font-weight:500;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text26"><tspan
+       sodipodi:role="line"
+       id="tspan38"
+       x="423.85764"
+       y="295.54398"
+       style="font-size:12px">Pérdida de</tspan><tspan
+       sodipodi:role="line"
+       id="tspan39"
+       x="423.85764"
+       y="310.54398"
+       style="font-size:12px">entrenamiento</tspan></text>
+  <!-- ── Zone labels with arrows ── -->
+  <!-- Underfitting arrow left -->
+  <line
+     x1="250"
+     y1="16"
+     x2="100"
+     y2="16"
+     stroke="var(--color-text-secondary)"
+     stroke-width="1.2"
+     marker-end="url(#arrow)"
+     mask="url(#imagine-text-gaps-n65wmh)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#3d3d3a;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line26"
+     transform="translate(-54.559639,-7.1959655)" />
+  <text
+     x="120.1365"
+     y="12.489118"
+     text-anchor="middle"
+     font-size="12"
+     fill="#185FA5"
+     style="color:#000000;font-weight:500;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text27">Subajuste</text>
+  <!-- Overfitting arrow right -->
+  <line
+     x1="380"
+     y1="16"
+     x2="540"
+     y2="16"
+     stroke="var(--color-text-secondary)"
+     stroke-width="1.2"
+     marker-end="url(#arrowR)"
+     mask="url(#imagine-text-gaps-n65wmh)"
+     style="color:#000000;font-weight:400;font-size:16px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#000000;stroke:#3d3d3a;stroke-width:1.2px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="line27"
+     transform="translate(-54.559639,-7.1959655)" />
+  <text
+     x="404.83264"
+     y="13.044717"
+     text-anchor="middle"
+     font-size="12"
+     fill="#993C1D"
+     style="color:#000000;font-weight:500;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text28">Sobreajuste</text>
+  <!-- Optimum label -->
+  <text
+     x="271.97318"
+     y="12.36325"
+     text-anchor="middle"
+     font-size="12"
+     fill="#3B6D11"
+     style="color:#000000;font-weight:500;font-size:13.3333px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#141413;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text29">Óptimo</text>
+  <!-- ── Gap annotation (brace area between curves in overfit zone) ── -->
+  <text
+     x="317.78717"
+     y="258.46609"
+     font-size="11"
+     fill="#5F5E5A"
+     style="color:#000000;font-weight:400;font-size:10.6667px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text31"><tspan
+       sodipodi:role="line"
+       id="tspan42"
+       x="317.78717"
+       y="258.46609">Brecha de</tspan><tspan
+       sodipodi:role="line"
+       id="tspan43"
+       x="317.78717"
+       y="271.79947">generalización</tspan></text>
+  <text
+     x="471.27454"
+     y="-128.49713"
+     font-size="11"
+     fill="#5F5E5A"
+     style="color:#000000;font-weight:400;font-size:10.6667px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:start;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text32" />
+  <!-- ── Tick marks on x-axis ── -->
+  <text
+     x="25.440361"
+     y="350.80405"
+     text-anchor="middle"
+     font-size="11"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text34">baja</text>
+  <text
+     x="273.44037"
+     y="350.80405"
+     text-anchor="middle"
+     font-size="11"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text35">media</text>
+  <text
+     x="525.44037"
+     y="350.80405"
+     text-anchor="middle"
+     font-size="11"
+     style="color:#000000;font-weight:400;font-size:12px;font-family:'Anthropic Sans', '-apple-system', BlinkMacSystemFont, 'Segoe UI', sans-serif;dominant-baseline:auto;text-anchor:middle;opacity:1;fill:#3d3d3a;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter"
+     id="text36">alta</text>
+  <!-- ── Legend ── -->
+  <path
+     style="fill:none;fill-opacity:1;stroke:#0a3cff;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 45.790331,61.338016 c 0,0 42.36532,120.755824 118.812159,160.138124 184.46545,95.02908 324.53038,104.22652 324.53038,104.22652"
+     id="path38"
+     sodipodi:nodetypes="csc" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#ff420a;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 43.73147,40.711228 c 0,0 42.592271,109.368042 113.22563,158.419192 49.4626,34.34917 82.15565,38.42951 116.81741,40.46712 128.66034,7.56337 213.72923,-93.0933 213.72923,-93.0933"
+     id="path38-6"
+     sodipodi:nodetypes="cssc" />
+  <g
+     id="g42"
+     transform="translate(-397.01821,335.87033)">
+    <path
+       style="fill:#888780;fill-opacity:1;stroke:#479538;stroke-width:2;stroke-linejoin:round;stroke-dasharray:6, 2;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 708.63038,-92.392681 v 35.667875"
+       id="path42" />
+    <path
+       style="fill:#888780;fill-opacity:1;stroke:#479538;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 701.19973,-56.164935 14.55656,-0.0499 m 3,-15"
+       id="path42-5"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#888780;fill-opacity:1;stroke:#479538;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 701.28589,-93.338222 14.55656,-0.0499 m 3,-14.999998"
+       id="path42-5-2"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
