@@ -94,15 +94,36 @@ def find_notebooks(paths, repo_root):
     return [f for f in result if not is_excluded(f)]
 
 
-def already_has_badge(nb):
+def cell_source(cell):
+    return "".join(cell.get("source", []))
+
+
+def has_frontmatter(nb):
+    """El frontmatter YAML de MyST (título, autor, licencia, etc.) debe ser
+    literalmente la primera celda, o MyST no lo reconoce. Lo detectamos para
+    insertar el badge DESPUÉS de él en vez de antes."""
     cells = nb.get("cells", [])
     if not cells:
         return False
     first = cells[0]
-    if first.get("cell_type") != "markdown":
+    if first.get("cell_type") not in ("markdown", "raw"):
         return False
-    source = "".join(first.get("source", []))
-    return "colab.research.google.com" in source
+    return cell_source(first).lstrip().startswith("---")
+
+
+def insertion_index(nb):
+    return 1 if has_frontmatter(nb) else 0
+
+
+def already_has_badge(nb):
+    cells = nb.get("cells", [])
+    idx = insertion_index(nb)
+    if idx >= len(cells):
+        return False
+    candidate = cells[idx]
+    if candidate.get("cell_type") != "markdown":
+        return False
+    return "colab.research.google.com" in cell_source(candidate)
 
 
 def make_badge_cell(colab_url):
@@ -129,7 +150,7 @@ def process_notebook(nb_path, repo_root, user, repo, branch, dry_run):
         return False
 
     badge_cell = make_badge_cell(colab_url)
-    nb.setdefault("cells", []).insert(0, badge_cell)
+    nb.setdefault("cells", []).insert(insertion_index(nb), badge_cell)
 
     if dry_run:
         print(f"  [dry-run] agregaría badge: {rel_path} -> {colab_url}")
