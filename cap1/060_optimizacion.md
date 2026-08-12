@@ -140,7 +140,7 @@ lo que a su vez se puede escribir
 $$
 \frac{\partial \mathcal{L}}{\partial u^{(2)}} = \frac{\partial \mathcal{L}}{\partial \hat y} \frac{\partial \hat y}{\partial u^{(2)}}
 $$
-Estos gradientes que se han calculado aquí son los mismos que aparecen ilustrados en la Figura #. 
+Estos gradientes que se han calculado aquí son los mismos que aparecen ilustrados en la [](#backprop_gradiente_W1_v2). 
 
 Sabías que Gottfried Leibniz formuló la regla de la cadena en 1676, aunque su aplicación específica en perceptrones multicapa no se documentaría hasta la década de 1960. 
 

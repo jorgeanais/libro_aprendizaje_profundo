@@ -28,6 +28,17 @@ project:
         - file: cap1/130_funciones_de_activacion.ipynb
         - file: cap1/140_Optimizadores.ipynb
         - file: cap1/150_Ajustando_una_red.ipynb
+    - title: Redes Convolucionales
+      children:
+        - file: cap2/000_motivacion.md
+        - file: cap2/010_dim_conv.ipynb
+        - file: cap2/020_capaconv.ipynb
+        - file: cap2/030_pooling.ipynb
+        - file: cap2/040_CNN_MNIST.ipynb
+        - file: cap2/050_gatos_y_perros.ipynb
+        - file: cap2/060_redes_notables.md
+        - file: cap2/070_Transfer_Learning.ipynb
+        - file: cap2/080_ResNet34.ipynb
 
 site:
   template: book-theme
