@@ -68,12 +68,12 @@ git push -u origin main.
 ```bash
 jupyter book init --gh-pages
 ```
-El prompt preguntará la rama (main) y el nombre del archivo de Action (deja el default deploy.yml). Esto genera `.github/workflows/deploy.yml` automáticamente.
+El prompt preguntará la rama (main) y el nombre del archivo de Action (dejar el valor por defecto `deploy.yml`). Esto genera `.github/workflows/deploy.yml` automáticamente.
 
-3. Sube el archivo de la GitHub Action
+3. Subir el archivo de la GitHub Action
 ```bash
 git add .github/workflows/deploy.yml
-git commit -m 'agrega deploy action'
+git commit -m "agregar deploy action"
 git push
 ```
 
@@ -82,7 +82,7 @@ Al terminar, tu libro estará en https://TU-USUARIO.github.io/libro-aprendizaje-
 
 ## Workflow
 1. Agregar archivos `.md` o `.ipynb` en el directorio (yo lo organice en carpetas cap1, cap2, etc...)
-2. Actualizar el documento myst.yml con la estructura deseada
+2. Actualizar el documento `myst.yml` con la estructura deseada
 3. Una vez listos los cambios
 ```bash
 git add .
@@ -90,7 +90,7 @@ git commit -m "mensaje descriptivo"
 git git push
 ```
 4. Cada vez que hagas git push a main, la Action recompila y republica sola la nueva versión del libro
-5. Disfrutar y tomarse un cafecito
+5. Disfrutar y tomarse un tecito
 
 ## Documentación
 
