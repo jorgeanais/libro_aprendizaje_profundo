@@ -28,6 +28,7 @@ project:
         - file: cap1/130_funciones_de_activacion.ipynb
         - file: cap1/140_Optimizadores.ipynb
         - file: cap1/150_Ajustando_una_red.ipynb
+        - file: cap1/160_horas_luz_chile.ipynb
     - title: Redes Convolucionales
       children:
         - file: cap2/000_motivacion.md
