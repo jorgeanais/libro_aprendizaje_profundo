@@ -16,11 +16,7 @@ Hasta ahora hemos discutido los componentes básicos de una red neuronal directa
 
 Además, tenemos flexibilidad en definir la arquitectura de la red, es decir, la red puede tener tantas capas y neuronas como queramos (o quepan en la memoria de nuestra computadora). También podemos elegir la función de activación para nuestras capas ocultas. Estas características arbitrarias de la red se llaman hiperparámetros, y se diferencian de los parámetros de la red (pesos y sesgos) porque los hiperparámetros quedan fijos al momento de definir la red, y no se modifican posteriormente.
 
-En esta sección nos centraremos en el proceso de hemos discutido los componentes básicos de una red neuronal directa totalmente conectada, que incluía capas de entrada, oculta y de salida, que aportan a número de parámetros (pesos y sesgos de la red).  Simbolizaremos a todos los parámetros de una red mediante la letra griega $\theta$.
-
-Además, tenemos flexibilidad en definir la arquitectura de la red, es decir, la red puede tener tantas capas y neuronas como queramos (o quepan en la memoria de nuestra computadora). También podemos elegir la función de activación para nuestras capas ocultas. Estas características arbitrarias de la red se llaman hiperparámetros, y se diferencian de los parámetros de la red (pesos y sesgos) porque los hiperparámetros quedan fijos al momento de definir la red, y no se modifican posteriormente.
-
-En esta semana nos centraremos en el proceso de **entrenamiento** de una red neuronal. Es decir, como lograr que nuestra red aprenda a resolver una tarea partir de un conjunto de datos de ejemplo. Para ello, necesitaremos ajustar los parámetros de la red, es decir, modificar los valores numéricos de los pesos y sesgos de modo que obtengamos un resultado satisfactorio.
+En esta sección nos centraremos en el proceso de **entrenamiento** de una red neuronal. Es decir, como lograr que nuestra red aprenda a resolver una tarea partir de un conjunto de datos de ejemplo. Para ello, necesitaremos ajustar los parámetros de la red, es decir, modificar los valores numéricos de los pesos y sesgos de modo que obtengamos un resultado satisfactorio.
 
 ## Conjunto de datos de entrenamiento
 
