@@ -48,6 +48,9 @@ project:
         - file: cap3/030_RNN_Keras.ipynb
         - file: cap3/040_redesconmemoria.md
         - file: cap3/050_LSTM_GRU_PyTorch.ipynb
+    - title: Transformers
+      children:
+        - file: cap4/000_intro.md
 
 site:
   template: book-theme
