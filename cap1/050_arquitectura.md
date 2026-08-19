@@ -68,7 +68,7 @@ Pongámonos a la tarea de crear una red que permita identificar el dígito (`0`,
 
 Lo primero que debemos pensar es en la capa de entrada. Sabemos que cada imágen es de 28x28 pixeles, es decir, en total tenemos 784 valores que servirán de entrada. Para mantener nuestro ejemplo sencillo, pensemos en una arquitectura que tenga 2 capas ocultas, cada una con 128 y 64 neuronas respectivamente, tal como se muestra en la [](#mnist_network_architecture).
 
-Finalmente tenemos la capa de salida, la cual se tiene que ajustar a lo que queremos predecir. Como existen 10 clases posibles (una por cada dígito), nuestra capa de salida tiene que tener 10 neuronas. Nos gustaría que cada una de estas neuronas represente la probabilidad de cada una de las clases. Observe la capa de salida de la red en la Figura #.
+Finalmente tenemos la capa de salida, la cual se tiene que ajustar a lo que queremos predecir. Como existen 10 clases posibles (una por cada dígito), nuestra capa de salida tiene que tener 10 neuronas. Nos gustaría que cada una de estas neuronas represente la probabilidad de cada una de las clases. Observe la capa de salida de la red en la [](#mnist_network_architecture).
 
 
 :::{important}
